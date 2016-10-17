@@ -1,0 +1,26 @@
+{
+  "name": "friend-o-mizer-viewer",
+  "version": "0.0.1",
+  "private": false,
+  "main": "index.js",
+  "scripts": {
+    "start": "bin/friends-randomize"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dkunin/friend-o-mizer-viewer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dkunin/friend-o-mizer-viewer/issues"
+  },
+  "homepage": "https://github.com/dkunin/friend-o-mizer-viewer",
+  "keywords": [
+    "friends",
+    "episodes",
+    "random"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "array-shuffle": "1.0.1"
+  }
+}

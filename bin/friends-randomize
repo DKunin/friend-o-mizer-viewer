@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var fs = require('fs');
+var arrayShuffle = require('array-shuffle');
+var episodeList = JSON.parse(fs.readFileSync('./episodes.json').toString());
+var randomEpisode = arrayShuffle(episodeList._embedded.episodes).pop();
+
+function episodeToShortCut(episode) {
+    return `Friends S${episode.season}E${episode.number}`;
+}
+
+console.log(episodeToShortCut(randomEpisode));

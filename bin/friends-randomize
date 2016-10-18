@@ -7,8 +7,12 @@ var arrayShuffle = require('array-shuffle');
 var episodeList = JSON.parse(fs.readFileSync('./episodes.json').toString());
 var randomEpisode = arrayShuffle(episodeList._embedded.episodes).pop();
 
+function zeroBefore(number) {
+    return ('0' + number).slice(-2);
+}
+
 function episodeToShortCut(episode) {
-    return `Friends S${episode.season}E${episode.number}`;
+    return `Friends S${zeroBefore(episode.season)}E${zeroBefore(episode.number)}`;
 }
 
 console.log(episodeToShortCut(randomEpisode));

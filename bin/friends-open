@@ -1,0 +1,2 @@
+#!/bin/bash
+open "http://fullepisodes.biz/search.php?keywords=$(bin/friends-randomize)"
